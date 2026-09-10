@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-body;
+    background-image: radial-gradient(circle at 1px 1px, rgba(27,21,18,0.06) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+  ::selection {
+    background: #E3A23C;
+    color: #1B1512;
+  }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #E3A23C;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .input {
+    @apply w-full border border-line rounded-sm px-3 py-2 bg-white focus:border-wine;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes pulse-draw {
+  from { stroke-dashoffset: 600; }
+  to { stroke-dashoffset: 0; }
+}
+
+.pulse-line {
+  stroke-dasharray: 600;
+  animation: pulse-draw 2.4s ease-out forwards;
+}
