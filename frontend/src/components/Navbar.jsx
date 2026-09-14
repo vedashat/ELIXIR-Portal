@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <NavLink to="/" className="flex items-center gap-3">
-            <img src="/Elixir-logo-yellow.png" alt="Elixir logo" className="h-13 w-auto" />
+            <img src="/Elixir-logo-yellow.png" alt="Elixir logo" className="h-14 w-auto" />
             <span className="font-display italic text-2xl tracking-tight">Elixir</span>
           </NavLink>
 
