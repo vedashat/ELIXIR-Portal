@@ -16,16 +16,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           <NavLink to="/" className="flex items-center gap-3">
-            <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
-              <path
-                d="M2 15 H10 L12 6 L16 24 L19 15 L22 15"
-                fill="none"
-                stroke="#E3A23C"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img src="/Elixir-logo_final.png" alt="Elixir logo" className="h-8 w-auto" />
             <span className="font-display italic text-2xl tracking-tight">Elixir</span>
           </NavLink>
 
